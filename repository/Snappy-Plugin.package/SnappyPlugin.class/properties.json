@@ -1,0 +1,17 @@
+{
+	"category" : "Snappy-Plugin",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SnBufferTooSmall",
+		"SnInvalidInput",
+		"SnOK",
+		"SnStFallbackFailed" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SnappyPlugin",
+	"pools" : [
+		 ],
+	"super" : "SmartSyntaxInterpreterPlugin",
+	"type" : "normal" }

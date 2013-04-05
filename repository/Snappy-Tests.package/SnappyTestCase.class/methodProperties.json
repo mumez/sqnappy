@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"shortCompressed0" : "mu 4/4/2013 23:09",
+		"shortCompressed1" : "mu 4/4/2013 23:09",
+		"shortData0" : "mu 4/4/2013 23:05",
+		"shortData1" : "mu 4/4/2013 23:05",
+		"testCompress" : "mu 4/4/2013 23:10",
+		"testMaxCompressedLength" : "mu 4/5/2013 00:19",
+		"testUncompress" : "mu 4/4/2013 23:11",
+		"testUncompressedLength" : "mu 4/5/2013 00:22",
+		"testValidateCompressed" : "mu 4/5/2013 00:18" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Snappy-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mu 4/5/2013 00:22",
+	"instvars" : [
+		 ],
+	"name" : "SnappyTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+fixtures
+shortData0
+	^#[]

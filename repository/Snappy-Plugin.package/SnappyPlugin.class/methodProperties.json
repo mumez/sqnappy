@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"hasHeaderFile" : "mu 4/4/2013 22:47",
+		"initialize" : "mu 4/4/2013 22:54",
+		"preambleCCode" : "mu 4/4/2013 22:46" },
+	"instance" : {
+		"charPointerFor:" : "mu 4/5/2013 00:11",
+		"initialiseModule" : "mu 3/25/2013 16:02",
+		"oopFromCBytes:sized:" : "mu 4/3/2013 00:06",
+		"primitiveCompress" : "mu 4/5/2013 00:09",
+		"primitiveCompressWithOffset" : "mu 4/5/2013 00:09",
+		"primitiveCopyBytes" : "mu 4/5/2013 00:09",
+		"primitiveMaxCompressedLength" : "mu 4/4/2013 22:56",
+		"primitiveRawCompress" : "mu 4/5/2013 00:11",
+		"primitiveRawUncompress" : "mu 4/5/2013 00:11",
+		"primitiveRawUncompressedLength" : "mu 4/5/2013 00:09",
+		"primitiveRawValidateCompressedBuffer" : "mu 4/5/2013 00:09",
+		"primitiveUncompress" : "mu 4/5/2013 00:09",
+		"primitiveUncompressWithOffset" : "mu 4/5/2013 00:09",
+		"primitiveUncompressedLength" : "mu 4/5/2013 00:10",
+		"primitiveValidateCompressedBuffer" : "mu 4/5/2013 00:10",
+		"returnErrorInfoFor:" : "mu 4/3/2013 00:22",
+		"returnIntegerFor:" : "mu 4/3/2013 00:45",
+		"shutdownModule" : "mu 3/25/2013 16:02",
+		"stackBytesValue:" : "mu 4/3/2013 00:07",
+		"stackCharPointer:" : "mu 4/5/2013 00:12",
+		"stackPositiveIntegerValue:" : "mu 4/5/2013 00:12" } }

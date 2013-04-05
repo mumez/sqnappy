@@ -1,0 +1,14 @@
+{
+	"category" : "Snappy-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"reason" ],
+	"name" : "SnappyError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }
