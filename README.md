@@ -6,7 +6,7 @@ Sqnappy is using a VM plugin for calling Snappy C API. (It is not a pure Smallta
 
 You can see these directories:
 
-- plugin-build
+- vm-build
  + plugin build settings
 - plugin-binary
  + pre-build shared libraries (SnappyPlugin.dll, bundle, so, etc)
