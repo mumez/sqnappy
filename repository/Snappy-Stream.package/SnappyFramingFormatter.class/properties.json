@@ -1,0 +1,16 @@
+{
+	"category" : "Snappy-Stream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CompressedChunkType",
+		"StreamIdentifierChunkType",
+		"UncompressedChunkType" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stream" ],
+	"name" : "SnappyFramingFormatter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

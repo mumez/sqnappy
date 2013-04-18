@@ -3,19 +3,19 @@ primitiveRawCompress
 	<export: true>
 	<var: 'input' type: 'const char*'>
 	<var: 'inputOffset' type: 'size_t'>
-	<var: 'inputLength' declareC: 'size_t inputLength'>
+	<var: 'inputLength' type: 'size_t'>
 	<var: 'compressed' type: 'char*'>
 	<var: 'outputOffset' type: 'size_t'>
 	<var: 'compressedLength' declareC: 'size_t compressedLength'>
 	<var: 'status' declareC: 'snappy_status status'>
 	| inputObj input inputOffset inputLength compressedObj compressed outputOffset compressedLength status |
-	interpreterProxy methodArgumentCount = 4 
+	interpreterProxy methodArgumentCount = 5 
 		ifFalse:[^interpreterProxy primitiveFail].
-	inputObj := interpreterProxy stackValue: 3.
+	inputObj := interpreterProxy stackValue: 4.
 	input := self charPointerFor: inputObj.
 	input ifNil: [^interpreterProxy primitiveFail].
-	inputOffset := self stackPositiveIntegerValue: 2.
-	inputLength := interpreterProxy byteSizeOf: inputObj.
+	inputOffset := self stackPositiveIntegerValue: 3.
+	inputLength := self stackPositiveIntegerValue: 2.
 	compressedObj := interpreterProxy stackValue: 1.
 	compressed := self charPointerFor: compressedObj.
 	compressed ifNil: [^interpreterProxy primitiveFail].

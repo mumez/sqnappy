@@ -1,0 +1,2 @@
+initialize-release
+on: aByteArrayOrStream

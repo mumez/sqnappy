@@ -1,0 +1,17 @@
+{
+	"category" : "Snappy-Stream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"blockSizeType",
+		"blockSize",
+		"compressedBuffer",
+		"uncompressedBuffer" ],
+	"name" : "SnappySqnappyFormatter",
+	"pools" : [
+		 ],
+	"super" : "SnappyFramingFormatter",
+	"type" : "normal" }

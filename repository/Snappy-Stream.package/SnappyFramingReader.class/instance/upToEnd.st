@@ -1,0 +1,3 @@
+actions
+upToEnd
+	^self contents

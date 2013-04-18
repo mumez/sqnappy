@@ -1,7 +1,7 @@
 private
 stackPositiveIntegerValue: index
 	| num |
-	num := (interpreterProxy stackValue: 0).
+	num := (interpreterProxy stackValue: index).
 	((interpreterProxy isIntegerValue: num) and: [num < 0]) ifTrue: [^nil].
 	 ^ interpreterProxy positive32BitValueOf: num
 	

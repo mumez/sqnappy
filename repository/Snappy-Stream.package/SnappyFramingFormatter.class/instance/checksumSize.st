@@ -1,0 +1,3 @@
+constants
+checksumSize
+	^4

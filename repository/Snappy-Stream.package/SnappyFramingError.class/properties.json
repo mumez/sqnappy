@@ -1,0 +1,14 @@
+{
+	"category" : "Snappy-Stream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SnappyFramingError",
+	"pools" : [
+		 ],
+	"super" : "SnappyError",
+	"type" : "normal" }

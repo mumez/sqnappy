@@ -1,15 +1,17 @@
 {
 	"class" : {
 		"compress:" : "mu 4/5/2013 00:16",
+		"compress:inputOffset:sized:into:outputOffset:" : "mu 4/14/2013 00:23",
+		"copyBytes:inputOffset:sized:into:outputOffset:" : "mu 4/14/2013 00:30",
 		"maxCompressedLengthOf:" : "mu 4/5/2013 00:17",
 		"primCompress:" : "mu 3/29/2013 00:10",
 		"primCompress:from:" : "mu 3/29/2013 00:09",
-		"primCompress:inputOffset:into:outputOffset:" : "mu 4/1/2013 01:14",
-		"primCopyBytes:inputOffset:into:outputOffset:" : "mu 4/4/2013 00:32",
+		"primCompress:inputOffset:sized:into:outputOffset:" : "mu 4/14/2013 00:22",
+		"primCopyBytes:inputOffset:sized:into:outputOffset:" : "mu 4/14/2013 00:29",
 		"primMaxCompressedLengthOf:" : "mu 3/26/2013 11:29",
 		"primUncompress:" : "mu 3/30/2013 00:46",
 		"primUncompress:from:" : "mu 3/29/2013 01:00",
-		"primUncompress:inputOffset:into:outputOffset:" : "mu 4/1/2013 01:04",
+		"primUncompress:inputOffset:sized:into:outputOffset:" : "mu 4/16/2013 11:09",
 		"primUncompressedLengthOf:" : "mu 4/4/2013 01:16",
 		"primUncompressedLengthOf:from:" : "mu 4/1/2013 01:05",
 		"primValidateCompressedBuffer:" : "mu 3/29/2013 00:34",
@@ -17,6 +19,7 @@
 		"signalFromStatusCode:" : "mu 4/4/2013 01:06",
 		"signalInvalidInput" : "mu 4/4/2013 23:27",
 		"uncompress:" : "mu 4/5/2013 00:16",
+		"uncompress:inputOffset:sized:into:outputOffset:" : "mu 4/16/2013 11:10",
 		"uncompressedLengthOf:" : "mu 4/5/2013 00:16",
 		"validateCompressed:" : "mu 4/5/2013 00:16" },
 	"instance" : {

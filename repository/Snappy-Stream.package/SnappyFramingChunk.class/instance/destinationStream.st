@@ -1,0 +1,3 @@
+accessing
+destinationStream
+	^self framingReader contentStream

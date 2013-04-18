@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"formatter:" : "mu 4/12/2013 00:11" },
+	"instance" : {
+		"blockSize" : "mu 4/12/2013 00:34",
+		"bufferPosition" : "mu 4/18/2013 13:38",
+		"bufferPosition:" : "mu 4/18/2013 13:38",
+		"checksumSize" : "mu 4/16/2013 13:15",
+		"close" : "mu 4/13/2013 22:42",
+		"compressedBuffer" : "mu 4/11/2013 23:50",
+		"compressedBuffer:" : "mu 4/11/2013 23:50",
+		"formatter" : "mu 4/12/2013 00:12",
+		"formatter:" : "mu 4/12/2013 00:12",
+		"on:" : "mu 4/14/2013 23:19",
+		"snappyCore" : "mu 4/12/2013 00:42",
+		"stream" : "mu 4/12/2013 00:12",
+		"stream:" : "mu 4/12/2013 00:12",
+		"uncompressedBuffer" : "mu 4/11/2013 23:50",
+		"uncompressedBuffer:" : "mu 4/11/2013 23:50" } }

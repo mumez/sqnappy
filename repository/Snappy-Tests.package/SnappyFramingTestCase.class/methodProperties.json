@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"origBytes1" : "mu 4/18/2013 18:14",
+		"origBytes2" : "mu 4/18/2013 18:21",
+		"sqnBytes1" : "mu 4/18/2013 17:59",
+		"sqnBytes2" : "mu 4/18/2013 17:59",
+		"sqnBytes3" : "mu 4/18/2013 18:00",
+		"testReadSqnappyStream" : "mu 4/18/2013 20:39",
+		"testReadWriteSqnappyStream" : "mu 4/18/2013 21:00",
+		"testWriteSqnappyStream" : "mu 4/18/2013 20:44" } }

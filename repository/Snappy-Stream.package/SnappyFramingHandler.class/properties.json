@@ -1,0 +1,18 @@
+{
+	"category" : "Snappy-Stream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"compressedBuffer",
+		"uncompressedBuffer",
+		"bufferPosition",
+		"stream",
+		"formatter" ],
+	"name" : "SnappyFramingHandler",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

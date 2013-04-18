@@ -1,0 +1,22 @@
+{
+	"category" : "Snappy-Stream",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"originalSize",
+		"checksum",
+		"framingReader",
+		"sourceStream",
+		"startIndex",
+		"endIndex",
+		"currentIndex",
+		"readEndIndex" ],
+	"name" : "SnappyFramingChunk",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

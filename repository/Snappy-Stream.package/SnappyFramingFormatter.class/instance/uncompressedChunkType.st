@@ -1,0 +1,3 @@
+constants
+uncompressedChunkType
+	^UncompressedChunkType

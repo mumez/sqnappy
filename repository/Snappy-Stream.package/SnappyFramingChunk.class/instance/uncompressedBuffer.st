@@ -1,0 +1,3 @@
+accessing
+uncompressedBuffer
+	^self framingReader uncompressedBuffer
