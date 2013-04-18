@@ -1,4 +1,4 @@
-testing
+tests
 testReadSqnappyStream
 	"self debug: #testReadSqnappyStream"
 	| strm bytes |

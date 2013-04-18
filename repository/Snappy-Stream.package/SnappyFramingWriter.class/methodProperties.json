@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"blockSize" : "mu 4/18/2013 23:51",
+		"blockSizeType" : "mu 4/18/2013 23:26",
+		"blockSizeType:" : "mu 4/18/2013 23:26",
 		"bufferPosition" : "mu 4/13/2013 00:45",
 		"bufferPosition:" : "mu 4/13/2013 00:45",
 		"close" : "mu 4/13/2013 22:43",

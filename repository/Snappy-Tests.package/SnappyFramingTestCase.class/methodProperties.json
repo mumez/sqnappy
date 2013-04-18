@@ -4,9 +4,14 @@
 	"instance" : {
 		"origBytes1" : "mu 4/18/2013 18:14",
 		"origBytes2" : "mu 4/18/2013 18:21",
+		"sqnBiggerBlockBytes1" : "mu 4/18/2013 23:48",
+		"sqnBiggerBlockBytes2" : "mu 4/18/2013 23:49",
+		"sqnBiggerBlockBytes3" : "mu 4/18/2013 23:49",
 		"sqnBytes1" : "mu 4/18/2013 17:59",
 		"sqnBytes2" : "mu 4/18/2013 17:59",
 		"sqnBytes3" : "mu 4/18/2013 18:00",
+		"testBlockSizeOfSqnappyStream" : "mu 4/18/2013 23:53",
 		"testReadSqnappyStream" : "mu 4/18/2013 20:39",
-		"testReadWriteSqnappyStream" : "mu 4/18/2013 21:00",
-		"testWriteSqnappyStream" : "mu 4/18/2013 20:44" } }
+		"testReadWriteSqnappyStream" : "mu 4/18/2013 23:29",
+		"testWriteSqnappyStream" : "mu 4/18/2013 20:44",
+		"testWriteSqnappyStreamCustomBlockSize" : "mu 4/18/2013 23:55" } }

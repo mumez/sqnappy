@@ -1,4 +1,4 @@
-testing
+tests
 testWriteSqnappyStream
 	"self debug: #testWriteSqnappyStream"
 	| strm |
