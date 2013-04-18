@@ -43,16 +43,16 @@
 	<key>DTCompiler</key>
 	<string></string>
 	<key>DTPlatformBuild</key>
-	<string>4B110</string>
+	<string>10M2518</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>PG</string>
 	<key>DTSDKBuild</key>
 	<string>9L31a</string>
 	<key>DTSDKName</key>
 	<string>macosx10.5</string>
 	<key>DTXcode</key>
-	<string>0410</string>
+	<string>0400</string>
 	<key>DTXcodeBuild</key>
-	<string>4B110</string>
+	<string>10M2518</string>
 </dict>
 </plist>
