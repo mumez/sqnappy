@@ -1,15 +1,15 @@
 {
 	"class" : {
-		"hasHeaderFile" : "mu 4/4/2013 22:47",
-		"initialize" : "mu 4/4/2013 22:54",
-		"preambleCCode" : "mu 4/4/2013 22:46" },
+		"hasHeaderFile" : "mu 4/19/2013 20:41",
+		"initialize" : "mu 4/4/2013 22:54" },
 	"instance" : {
-		"charPointerFor:" : "mu 4/5/2013 00:11",
+		"charPointerFor:" : "mu 4/19/2013 22:15",
 		"initialiseModule" : "mu 3/25/2013 16:02",
 		"oopFromCBytes:sized:" : "mu 4/3/2013 00:06",
 		"primitiveCompress" : "mu 4/5/2013 00:09",
 		"primitiveCompressWithOffset" : "mu 4/5/2013 00:09",
 		"primitiveCopyBytes" : "mu 4/14/2013 00:32",
+		"primitiveMaskedCrc32c" : "mu 4/19/2013 22:53",
 		"primitiveMaxCompressedLength" : "mu 4/4/2013 22:56",
 		"primitiveRawCompress" : "mu 4/14/2013 01:01",
 		"primitiveRawUncompress" : "mu 4/14/2013 00:09",
@@ -23,5 +23,5 @@
 		"returnIntegerFor:" : "mu 4/3/2013 00:45",
 		"shutdownModule" : "mu 3/25/2013 16:02",
 		"stackBytesValue:" : "mu 4/3/2013 00:07",
-		"stackCharPointer:" : "mu 4/5/2013 00:12",
+		"stackCharPointer:" : "mu 4/19/2013 22:41",
 		"stackPositiveIntegerValue:" : "mu 4/14/2013 00:58" } }

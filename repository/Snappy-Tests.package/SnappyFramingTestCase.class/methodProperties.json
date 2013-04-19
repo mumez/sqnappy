@@ -11,7 +11,10 @@
 		"sqnBytes2" : "mu 4/18/2013 17:59",
 		"sqnBytes3" : "mu 4/18/2013 18:00",
 		"testBlockSizeOfSqnappyStream" : "mu 4/18/2013 23:53",
+		"testMaskedCrc32c" : "mu 4/19/2013 23:23",
 		"testReadSqnappyStream" : "mu 4/18/2013 20:39",
+		"testReadStream" : "mu 4/20/2013 00:14",
 		"testReadWriteSqnappyStream" : "mu 4/18/2013 23:29",
 		"testWriteSqnappyStream" : "mu 4/18/2013 20:44",
-		"testWriteSqnappyStreamCustomBlockSize" : "mu 4/18/2013 23:55" } }
+		"testWriteSqnappyStreamCustomBlockSize" : "mu 4/18/2013 23:55",
+		"testWriteStream" : "mu 4/20/2013 00:05" } }

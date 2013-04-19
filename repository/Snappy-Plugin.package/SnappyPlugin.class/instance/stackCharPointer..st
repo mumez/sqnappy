@@ -6,6 +6,6 @@ stackCharPointer: index
 	<var: 'ptr' declareC: 'char* ptr'>
 	obj := interpreterProxy stackObjectValue: index.
 	(interpreterProxy isBytes: obj) ifFalse:[^nil].
-	ptr := interpreterProxy firstIndexableField: obj.
+	ptr := self cCoerce: (interpreterProxy firstIndexableField: obj) to: 'char*'.
 	^ptr
 	

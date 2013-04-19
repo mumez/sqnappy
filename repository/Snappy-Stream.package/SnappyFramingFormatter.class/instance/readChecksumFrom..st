@@ -1,4 +1,5 @@
 private-reading
 readChecksumFrom: aStream 
-	
-	^ aStream next: 4
+	| sz |
+	sz := self checksumSize.
+	^ (aStream next: sz ) readStream nextLittleEndianNumber: sz

@@ -5,6 +5,6 @@ charPointerFor: obj
 	<var: 'ptr' declareC: 'char* ptr'>
 	| ptr |
 	(interpreterProxy isBytes: obj) ifFalse:[^nil].
-	ptr := interpreterProxy firstIndexableField: obj.
+	ptr := self cCoerce: (interpreterProxy firstIndexableField: obj) to: 'char*'.
 	^ptr
 	

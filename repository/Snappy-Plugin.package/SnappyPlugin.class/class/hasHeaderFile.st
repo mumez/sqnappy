@@ -1,3 +1,3 @@
 translation
 hasHeaderFile
-	^false
+	^true

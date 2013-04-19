@@ -24,7 +24,7 @@
 		"readVersionFrom:" : "mu 4/11/2013 23:36",
 		"streamIdentifier" : "mu 4/14/2013 23:48",
 		"version" : "mu 4/9/2013 22:26",
-		"writeChecksumOn:to:" : "mu 4/16/2013 11:15",
+		"writeChecksumOn:sized:to:" : "mu 4/20/2013 00:19",
 		"writeChunkSize:to:" : "mu 4/14/2013 22:48",
 		"writeStreamIdentifierChunkTo:" : "mu 4/18/2013 23:40",
 		"writeUint16:to:" : "mu 4/10/2013 00:26",
