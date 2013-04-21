@@ -15,6 +15,6 @@
 		"testReadSqnappyStream" : "mu 4/18/2013 20:39",
 		"testReadStream" : "mu 4/20/2013 00:14",
 		"testReadWriteSqnappyStream" : "mu 4/18/2013 23:29",
-		"testWriteSqnappyStream" : "mu 4/18/2013 20:44",
+		"testWriteSqnappyStream" : "mu 4/21/2013 22:50",
 		"testWriteSqnappyStreamCustomBlockSize" : "mu 4/18/2013 23:55",
 		"testWriteStream" : "mu 4/20/2013 00:05" } }

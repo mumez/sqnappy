@@ -1,4 +1,4 @@
 defaults
 defaultBlockSizeType
-	"32k -see #computeBlockSize also"
-	^0
+	"64k -see #computeBlockSize also"
+	^1

@@ -6,4 +6,5 @@ on: aByteArrayOrStream
 	stream := aByteArrayOrStream isStream
 				ifTrue: [aByteArrayOrStream]
 				ifFalse: [ReadStream on: aByteArrayOrStream].
+	stream binary.
 	self formatter readChunkTyped: stream next on: stream 

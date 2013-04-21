@@ -1,4 +1,4 @@
 actions
 nextPut: aByte
-	self shouldFlush ifTrue: [self flash].
+	self shouldFlush ifTrue: [self flush].
 	self uncompressedBuffer byteAt: (self incrementBufferPosition) put: aByte

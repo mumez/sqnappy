@@ -1,0 +1,3 @@
+accessing
+outStream
+	^ self contentStream
