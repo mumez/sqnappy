@@ -36,5 +36,61 @@ originalBytes asString zipped size. "11036"
 [100 timesRepeat: [SnappyCore uncompress: (SnappyCore compress: originalBytes)]] timeToRun "45 -- 10.8x faster"
 </pre>
 
-## Future plan ##
-Currently, only basic APIs are provided. I'll add stream-style API for handling  bigger data.
+## Features ##
+- Basic compress/uncompress API
+- Stream API with framing format support (checked with [snzip](https://github.com/kubo/snzip))
+- Custom stream format (.sqn - sqnappy)
+	- Block size is changeable from 32k to 4M (default is 64k)
+	- No CRC32C checking for speed
+	- Data size is represented in big-endian
+
+## Usage ##
+Basic:
+<pre>
+"## Compress/Uncompress ##"
+compressed := SnappyCore compress: data.
+uncompressed := SnappyCore uncompress: compressed.
+</pre>
+
+Streaming:
+<pre>
+"## Streaming (write) ##"
+wstrm := SnappyFraming sz writeStreamOn: ByteArray new.
+wstrm nextPutAll: #[49 50 51 52 53 10 49 50 51 52 53 10].
+wstrm nextPutAll: #[49 50 51 52 53 10 123 49 50 51 52 53 10 0].
+compressed := wstrm contents.
+wstrm close.
+</pre>
+<pre>
+"## Streaming (read) ##"
+rstrm := SnappyFraming sz readStreamOn: compressed.
+uncompressed := rstrm contents.
+rstrm close.
+</pre>
+<pre>
+"## Streaming (partial read) ##"
+rstrm := SnappyFraming sz readStreamOn: compressed.
+[rstrm atEnd] whileFalse: [
+  uncompressedPart := rstrm upTo: 10.
+  Transcript cr; show: uncompressedPart asString
+].
+rstrm close.
+</pre>
+
+Streaming with files: (This snippet is using [FileMan](https://github.com/mumez/FileMan) for simplifying file access).
+<pre>
+" ## Compress 'alice29.txt -> 'alice29.txt.sqn' with Sqnappy format ##"
+readStr := ('.' asDirectoryEntry / 'alice29.txt') readStream binary.
+writeEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
+writer := SnappyFraming sqn writeStreamOn: writeEnt writeStream.
+writer repeatWrite: [:w | w nextPut: readStr next] until: [readStr atEnd] onFinished: [:w | w close. readStr close].
+
+" ## Uncompress 'alice29.txt.sqn -> 'alice29-trip.txt' ##"
+readEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
+reader := SnappyFraming sqn readStreamOn: ent readStream.
+writeStr := ('.' asDirectoryEntry / 'alice29-trip.txt') writeStream.
+reader repeatRead: [:r | ] outStream: writeStr onFinished: [:r | r close. writeStr close]
+</pre>
+
+## License ##
+[MIT license](http://opensource.org/licenses/MIT)
