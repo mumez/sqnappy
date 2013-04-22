@@ -18,7 +18,7 @@ For MCZ packages, visit [SmalltalkHub Sqnappy site](http://smalltalkhub.com/#!/~
 ## Performance ##
 Just a simple code snippet. But it would be helpful for showing Sqnappy's characteristics.
 
-<pre>
+```Smalltalk
 "## Test data ##"
 originalBytes := Morph allSelectors asString asByteArray.
 originalBytes size. "30363 bytes on my image"
@@ -34,7 +34,7 @@ originalBytes asString zipped size. "11036"
 [100 timesRepeat: [originalBytes asString zipped unzipped asByteArray]] timeToRun.  "487"
 " Sqnappy "
 [100 timesRepeat: [SnappyCore uncompress: (SnappyCore compress: originalBytes)]] timeToRun "45 -- 10.8x faster"
-</pre>
+```
 
 ## Features ##
 - Basic compress/uncompress API
@@ -46,28 +46,28 @@ originalBytes asString zipped size. "11036"
 
 ## Usage ##
 Basic:
-<pre>
+```Smalltalk
 "## Compress/Uncompress ##"
 compressed := SnappyCore compress: data.
 uncompressed := SnappyCore uncompress: compressed.
-</pre>
+```
 
 Streaming:
-<pre>
+```Smalltalk
 "## Streaming (write) ##"
 wstrm := SnappyFraming sz writeStreamOn: ByteArray new.
 wstrm nextPutAll: #[49 50 51 52 53 10 49 50 51 52 53 10].
 wstrm nextPutAll: #[49 50 51 52 53 10 123 49 50 51 52 53 10 0].
 compressed := wstrm contents.
 wstrm close.
-</pre>
-<pre>
+```
+```Smalltalk
 "## Streaming (read) ##"
 rstrm := SnappyFraming sz readStreamOn: compressed.
 uncompressed := rstrm contents.
 rstrm close.
-</pre>
-<pre>
+```
+```Smalltalk
 "## Streaming (partial read) ##"
 rstrm := SnappyFraming sz readStreamOn: compressed.
 [rstrm atEnd] whileFalse: [
@@ -75,22 +75,37 @@ rstrm := SnappyFraming sz readStreamOn: compressed.
   Transcript cr; show: uncompressedPart asString
 ].
 rstrm close.
-</pre>
+```
 
 Streaming with files: (This snippet is using [FileMan](https://github.com/mumez/FileMan) for simplifying file access).
-<pre>
-" ## Compress 'alice29.txt -> 'alice29.txt.sqn' with Sqnappy format ##"
+```Smalltalk
+"## Compress 'alice29.txt -> 'alice29.txt.sqn' with Sqnappy format ##"
 readStr := ('.' asDirectoryEntry / 'alice29.txt') readStream binary.
 writeEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
 writer := SnappyFraming sqn writeStreamOn: writeEnt writeStream.
 writer repeatWrite: [:w | w nextPut: readStr next] until: [readStr atEnd] onFinished: [:w | w close. readStr close].
 
-" ## Uncompress 'alice29.txt.sqn -> 'alice29-trip.txt' ##"
+"## Uncompress 'alice29.txt.sqn -> 'alice29-trip.txt' ##"
 readEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
 reader := SnappyFraming sqn readStreamOn: ent readStream.
 writeStr := ('.' asDirectoryEntry / 'alice29-trip.txt') writeStream.
 reader repeatReadUntilEnd:[:r | ] out: writeStr onFinished: [:r | r close. writeStr close]
-</pre>
+```
+
+## Installation ##
+1. Copy the [pre-compiled](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory
+2. Load Sqnappy
+```Smalltalk
+Gofer new
+      url: 'http://smalltalkhub.com/mc/MasashiUmezawa/Sqnappy/main';
+      package: 'ConfigurationOfSqnappy';
+      load.
+(Smalltalk at: #ConfigurationOfSqnappy) load.
+```
+(For Squeak, [Metacello](https://github.com/dalehenrich/metacello-work) needs to be installed before this step)
+4. Open TestRunner and see the results. If tests are red, please make sure step.1 was done properly.
+ 
+Note: If you are using 64 bit Squeak VM, probably you need to recompile plugin source by yourself (For Mac, I packaged Snappy.bundle as an universal binary, so it would be okay). 
 
 ## License ##
 [MIT license](http://opensource.org/licenses/MIT)
