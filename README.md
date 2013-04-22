@@ -38,7 +38,7 @@ originalBytes asString zipped size. "11036"
 
 ## Features ##
 - Basic compress/uncompress API
-- Stream API with framing format support (interoperability was checked with [snzip](https://github.com/kubo/snzip))
+- Stream API with [framing format](http://code.google.com/p/snappy/source/browse/trunk/framing_format.txt) support (interoperability was checked with [snzip](https://github.com/kubo/snzip))
 - Custom stream format (.sqn - sqnappy)
 	- Block size is changeable from 32k to 4M (default is 64k)
 	- No CRC32C checking for speed
