@@ -95,6 +95,7 @@ reader repeatReadUntilEnd:[:r | ] out: writeStr onFinished: [:r | r close. write
 ## Installation ##
 1. Copy the [pre-compiled](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory
 2. Load Sqnappy
+
 ```Smalltalk
 Gofer new
       url: 'http://smalltalkhub.com/mc/MasashiUmezawa/Sqnappy/main';
