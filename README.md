@@ -103,7 +103,8 @@ Gofer new
 (Smalltalk at: #ConfigurationOfSqnappy) load.
 ```
 (For Squeak, [Metacello](https://github.com/dalehenrich/metacello-work) needs to be installed before this step)
-4. Open TestRunner and see the results. If tests are red, please make sure step.1 was done properly.
+
+Open TestRunner and see the results. If tests are red, please make sure step.1 was done properly.
  
 Note: If you are using 64 bit Squeak VM, probably you need to recompile plugin source by yourself (For Mac, I packaged Snappy.bundle as an universal binary, so it would be okay). 
 
