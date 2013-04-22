@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfSqnappy",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfSqnappy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

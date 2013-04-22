@@ -38,7 +38,7 @@ originalBytes asString zipped size. "11036"
 
 ## Features ##
 - Basic compress/uncompress API
-- Stream API with framing format support (checked with [snzip](https://github.com/kubo/snzip))
+- Stream API with framing format support (interoperability was checked with [snzip](https://github.com/kubo/snzip))
 - Custom stream format (.sqn - sqnappy)
 	- Block size is changeable from 32k to 4M (default is 64k)
 	- No CRC32C checking for speed
@@ -89,7 +89,7 @@ writer repeatWrite: [:w | w nextPut: readStr next] until: [readStr atEnd] onFini
 readEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
 reader := SnappyFraming sqn readStreamOn: ent readStream.
 writeStr := ('.' asDirectoryEntry / 'alice29-trip.txt') writeStream.
-reader repeatRead: [:r | ] outStream: writeStr onFinished: [:r | r close. writeStr close]
+reader repeatReadUntilEnd:[:r | ] out: writeStr onFinished: [:r | r close. writeStr close]
 </pre>
 
 ## License ##
