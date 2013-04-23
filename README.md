@@ -79,18 +79,21 @@ rstrm close.
 
 Streaming with files: (This snippet is using [FileMan](https://github.com/mumez/FileMan) for simplifying file access).
 ```Smalltalk
-"## Compress 'alice29.txt -> 'alice29.txt.sqn' with Sqnappy format ##"
-readStr := ('.' asDirectoryEntry / 'alice29.txt') readStream binary.
-writeEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
+"## Compress 'SqueakV41.sources -> 'SqueakV41.sources.sqn' with Sqnappy format ##"
+readStr := ('.' asDirectoryEntry / 'SqueakV41.sources') readStream binary.
+writeEnt := '.' asDirectoryEntry / 'SqueakV41.sources.sqn'.
 writer := SnappyFraming sqn writeStreamOn: writeEnt writeStream.
-writer repeatWrite: [:w | w nextPut: readStr next] until: [readStr atEnd] onFinished: [:w | w close. readStr close].
+writer repeatWrite:[:w | w nextPutAll:(readStr next: w blockSize)] until:[readStr atEnd] finally:[:w | w close. readStr close].
 
-"## Uncompress 'alice29.txt.sqn -> 'alice29-trip.txt' ##"
-readEnt := '.' asDirectoryEntry / 'alice29.txt.sqn'.
-reader := SnappyFraming sqn readStreamOn: ent readStream.
-writeStr := ('.' asDirectoryEntry / 'alice29-trip.txt') writeStream.
-reader repeatReadUntilEnd:[:r | ] out: writeStr onFinished: [:r | r close. writeStr close]
+"## Uncompress 'SqueakV41.sources.sqn -> 'SqueakV41.sources' ##"
+readEnt := '.' asDirectoryEntry / 'SqueakV41.sources.sqn'.
+reader := SnappyFraming sqn readStreamOn: readEnt readStream.
+writeStr := ('.' asDirectoryEntry / 'SqueakV41-trip.sources') writeStream.
+reader repeatReadUntilEnd:[:r | ] out: writeStr finally:[:r | r close. writeStr close].
 ```
+
+On my windows laptop (Core-i5 2430M, Samsong SSD 840), Compressed file('SqueakV41.sources.sqn') was written in about 250 msecs. Uncompressed file('SqueakV41-trip.sources') was written in about 100 msecs.
+Original file size was 26,005,504 bytes. Compressed file size was 10,612,736 bytes.
 
 ## Installation ##
 1. Copy the [pre-compiled](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory

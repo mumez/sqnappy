@@ -6,7 +6,8 @@ version100: spec
 		do: [spec blessing: #beta.
 			spec description: 'Sqnappy 1.0'.
 			spec author: 'mu'.
+			spec timestamp: '4/23/2013 16:27'.
 			spec package: 'Snappy-Core' with: 'Snappy-Core-mu.24';
-				 package: 'Snappy-Stream' with: 'Snappy-Stream-mu.61';
-				 package: 'Snappy-Tests' with: 'Snappy-Tests-mu.6';
+				 package: 'Snappy-Stream' with: 'Snappy-Stream-mu.62';
+				 package: 'Snappy-Tests' with: 'Snappy-Tests-mu.7';
 				 package: 'Snappy-Plugin' with: 'Snappy-Plugin-mu.34']
