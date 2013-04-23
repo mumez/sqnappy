@@ -95,6 +95,8 @@ reader repeatReadUntilEnd:[:r | ] out: writeStr finally:[:r | r close. writeStr 
 On my windows laptop (Core-i5 2430M, Samsong SSD 840), Compressed file('SqueakV41.sources.sqn') was written in about **250 msecs**. Uncompressed file('SqueakV41-trip.sources') was written in about **100 msecs**.
 Original file size was **26,005,504 bytes**. Compressed file size was **10,612,736 bytes**.
 
+Stream API enables you to handle pretty big data. I've also tested the code above with a big pg_dump file (1.3G - 1,304,485,888 bytes). There were no annoying GCs. Compressed size was 631,627,776 bytes. 9844 msecs for compress; 6496 msecs for uncompress.
+
 ## Installation ##
 1. Copy the [pre-compiled](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory
 2. Load Sqnappy
