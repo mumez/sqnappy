@@ -102,13 +102,19 @@ Stream API enables you to handle pretty big data. I've also tested the code abov
 2. Load Sqnappy
 
 ```Smalltalk
+"Squeak"
+Installer squeaksource
+    project: 'MetacelloRepository';
+    install: 'ConfigurationOfSqnappy'. 
+(Smalltalk at: #ConfigurationOfSqnappy) load.
+```
+"Pharo"
 Gofer new
       url: 'http://smalltalkhub.com/mc/MasashiUmezawa/Sqnappy/main';
       package: 'ConfigurationOfSqnappy';
       load.
 (Smalltalk at: #ConfigurationOfSqnappy) load.
 ```
-(For Squeak, [Metacello](https://github.com/dalehenrich/metacello-work) needs to be installed before this step)
 
 Open TestRunner and see the results. If tests are red, please make sure step.1 was done properly.
  
