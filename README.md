@@ -107,7 +107,7 @@ Installer squeaksource
     project: 'MetacelloRepository';
     install: 'ConfigurationOfSqnappy'. 
 (Smalltalk at: #ConfigurationOfSqnappy) load.
-```
+
 "Pharo"
 Gofer new
       url: 'http://smalltalkhub.com/mc/MasashiUmezawa/Sqnappy/main';
