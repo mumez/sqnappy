@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8538BA0F171049E500FF6336 /* SnappyPlugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8538BA0E171049E500FF6336 /* SnappyPlugin.c */; };
-		8538BA1217104BC200FF6336 /* libsnappy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8538BA1117104BC200FF6336 /* libsnappy.a */; };
 		8550BBEF1722E7280071D5C2 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 8550BBEE1722E7280071D5C2 /* crc32.c */; };
+		858B09501729171D00B28F8C /* libsnappy.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 858B094F1729171D00B28F8C /* libsnappy.1.dylib */; };
+		858B09511729175800B28F8C /* libsnappy.1.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 858B094F1729171D00B28F8C /* libsnappy.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +18,6 @@
 		45591407122484CA00B6CE5D /* sqMemoryAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqMemoryAccess.h; path = ../../../platforms/Cross/vm/sqMemoryAccess.h; sourceTree = SOURCE_ROOT; };
 		4559140B122484CA00B6CE5D /* sqPlatformSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqPlatformSpecific.h; path = "../../../platforms/Mac OS/vm/sqPlatformSpecific.h"; sourceTree = SOURCE_ROOT; };
 		8538BA0E171049E500FF6336 /* SnappyPlugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SnappyPlugin.c; path = ../../../src/plugins/SnappyPlugin/SnappyPlugin.c; sourceTree = SOURCE_ROOT; };
-		8538BA1117104BC200FF6336 /* libsnappy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsnappy.a; path = "../../../platforms/Mac OS/third-party/snappy-1.1.0/lib/libsnappy.a"; sourceTree = SOURCE_ROOT; };
 		8550BBEE1722E7280071D5C2 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = ../../../platforms/Cross/plugins/SnappyPlugin/crc32.c; sourceTree = "<group>"; };
 		8550BBF01722E7330071D5C2 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = ../../../platforms/Cross/plugins/SnappyPlugin/crc32.h; sourceTree = "<group>"; };
 		8550BBF11722E73C0071D5C2 /* SnappyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnappyPlugin.h; path = ../../../platforms/Cross/plugins/SnappyPlugin/SnappyPlugin.h; sourceTree = "<group>"; };
@@ -25,6 +25,7 @@
 		857D012816287A9700B9B38B /* sqPlatformSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqPlatformSpecific.h; path = "../../../platforms/Mac OS/vm/sqPlatformSpecific.h"; sourceTree = SOURCE_ROOT; };
 		857D012916287A9700B9B38B /* sqConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqConfig.h; path = "../../../platforms/Mac OS/vm/sqConfig.h"; sourceTree = SOURCE_ROOT; };
 		857D012A16287A9700B9B38B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../../../platforms/Mac OS/vm/config.h"; sourceTree = SOURCE_ROOT; };
+		858B094F1729171D00B28F8C /* libsnappy.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsnappy.1.dylib; path = "../../../platforms/Mac OS/third-party/snappy-1.1.0/lib/libsnappy.1.dylib"; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* SnappyPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8538BA1217104BC200FF6336 /* libsnappy.a in Frameworks */,
+				858B09501729171D00B28F8C /* libsnappy.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +57,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				8538BA1117104BC200FF6336 /* libsnappy.a */,
+				858B094F1729171D00B28F8C /* libsnappy.1.dylib */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -120,6 +121,7 @@
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
+				858B09521729176600B28F8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,6 +138,9 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "SnappyPlugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -160,10 +165,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858B09511729175800B28F8C /* libsnappy.1.dylib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		858B09521729176600B28F8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#install_name_tool -change ${TARGETID} ${NEWTARGETID} ${EXECFILE}\nEXECFILE=${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\ninstall_name_tool -change /usr/local/lib/libsnappy.1.dylib @executable_path/../Resources/SnappyPlugin.bundle/Contents/Resources/libsnappy.1.dylib ${EXECFILE}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D576311048677EA00EA77CD /* Sources */ = {
@@ -181,24 +203,30 @@
 		1DEB911B08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_ENABLE_SSE42_EXTENSIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					/Developer/Headers/FlatCarbon,
 					"\"../../../platforms/Cross/third-party/snappy-1.1.0\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../platforms/Mac OS/third-party/snappy-1.1.0/lib\"",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "";
+				PRELINK_FLAGS = "";
 				PRODUCT_NAME = SnappyPlugin;
+				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = ../../../platforms/Cross/plugins/SnappyPlugin;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -207,20 +235,28 @@
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
 					/Developer/Headers/FlatCarbon,
 					"\"../../../platforms/Cross/third-party/snappy-1.1.0\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../platforms/Mac OS/third-party/snappy-1.1.0/lib\"",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "";
+				PRELINK_FLAGS = "";
 				PRODUCT_NAME = SnappyPlugin;
+				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = ../../../platforms/Cross/plugins/SnappyPlugin;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,19 +265,21 @@
 		1DEB911F08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../../platforms/Cross/third-party/snappy-1.1.0";
 				LIBRARY_SEARCH_PATHS = (
-					"\"../../../platforms/Mac OS/third-party/snappy-1.1.0\"",
+					"\"$(SRCROOT)/../../../platforms/Mac OS/third-party/snappy-1.1.0/lib\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				MACH_O_TYPE = mh_bundle;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lsnappy";
+				SDKROOT = macosx10.6;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "i386 x86_64";
 			};
@@ -250,18 +288,21 @@
 		1DEB912008733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../../../platforms/Cross/third-party/snappy-1.1.0";
 				LIBRARY_SEARCH_PATHS = (
-					"\"../../../platforms/Mac OS/third-party/snappy-1.1.0\"",
+					"\"$(SRCROOT)/../../../platforms/Mac OS/third-party/snappy-1.1.0/lib\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				MACH_O_TYPE = mh_bundle;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lsnappy";
+				SDKROOT = macosx10.6;
 				USER_HEADER_SEARCH_PATHS = "";
 				VALID_ARCHS = "i386 x86_64";
 			};
