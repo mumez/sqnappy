@@ -98,7 +98,7 @@ Original file size was **26,005,504 bytes**. Compressed file size was **10,612,7
 Stream API enables you to handle pretty big data. I've also tested the code above with a big pg_dump file ( **1.3G** - 1,304,485,888 bytes). There were no annoying GCs. Compressed size was 631,627,776 bytes. **9844 msecs** for compress; **6496 msecs** for uncompress.
 
 ## Installation ##
-1. Copy the [pre-compiled](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory
+1. Copy the [pre-built](https://github.com/mumez/sqnappy/blob/master/plugin-binary/) Snappy.dll (.so, .bundle) to your VM directory
 2. Load Sqnappy
 
 ```Smalltalk
@@ -118,7 +118,7 @@ Gofer new
 
 Open TestRunner and see the results. If tests are red, please make sure step.1 was done properly.
  
-Note: If you are using 64 bit Squeak VM, probably you need to recompile plugin source by yourself (For Mac, I packaged Snappy.bundle as an universal binary, so it would be okay). 
+Note: Plugin binaries were built for 32 bit Cog VM. For other VM (legacy VM, 64 bit VM, etc), probably you need to recompile plugin source by yourself.
 
 ## License ##
 [MIT license](http://opensource.org/licenses/MIT)
