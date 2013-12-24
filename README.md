@@ -9,11 +9,12 @@ You can see these directories:
 - plugin-build
  + plugin build settings
 - plugin-binary
- + pre-build shared libraries (SnappyPlugin.dll, bundle, so, etc)
+ + pre-built shared libraries (SnappyPlugin.dll, bundle, so, etc)
 - repository
  + [Cypress](https://github.com/CampSmalltalk/Cypress) style Smalltalk source tree
 
-For MCZ packages, visit [SmalltalkHub Sqnappy site](http://smalltalkhub.com/#!/~MasashiUmezawa/Sqnappy).
+For MCZ packages, visit 
+<a href="http://smalltalkhub.com/#!/~MasashiUmezawa/Sqnappy">SmalltalkHub Sqnappy site</a>.
 
 ## Performance ##
 Just a simple code snippet. But it would be helpful for showing Sqnappy's characteristics.
